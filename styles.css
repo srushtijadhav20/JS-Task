@@ -1,0 +1,136 @@
+#employee-form {
+    border-style: solid;
+    
+    padding: 10px;
+    
+    margin: auto;
+    width: 50%;
+     border: 3px solid ; 
+     padding: 10px; 
+}
+
+.employees-table {
+    border-style: solid ;
+    
+    padding: 20px;
+    
+    margin: auto;
+    width: 70%;
+     border: 3px solid; 
+    
+}
+
+body > table{
+    width: 50%;
+}
+
+table{
+    border-collapse: collapse;
+}
+table.list{
+    width:100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even),table.list thead>tr {
+    background-color: #dddddd;
+}
+
+input[type=text], input[type=number] {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 30%;
+    background-color:rgb(44, 44, 44);
+    color: white;
+    padding: 10px 18px;
+    /* margin: 0px 0; */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background: black;
+  }
+  
+
+form div.form-action-buttons{
+    text-align: right;
+}
+
+
+.button {
+    background-color:rgb(44, 44, 44); 
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px 4px 2px;
+    cursor: pointer;
+    border-radius:15px;
+    
+  }
+  
+#myInput {
+    
+    width:40%;
+    float: right;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    margin: auto;
+  }
+  #myInput1 {
+    
+    width:40%;
+    float: right;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    margin: auto;
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    #myInput1 #myInput {
+      float: none;
+    }
+    #myInput1 #myInput{
+      float: none;
+      display: block;
+      text-align: left;
+      width:100%;
+      margin: 0;
+      padding: 14px;
+    }
+}
+
+@media screen and (max-width:100px) {
+    #myInput1 #myInput {
+      float: none;
+    }
+    #myInput1 #myInput{
+      float: none;
+      display: block;
+      text-align: left;
+      width:100%;
+      margin: 0;
+      padding: 14px;
+    }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Employee form
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+
+	<h1><center>Employee Form</center></h1>
+	
+			<div id="employee-form" name="employee-form">
+                <form onsubmit="event.preventDefault();onFormSubmit(); onClick();" autocomplete="off">
+                    <div>
+                        <input type="text"  id="myInput" onkeyup="searchName()" placeholder="Search for names..">
+                    </div><br><br><br><br>
+                    <div>
+                        <input type="text"  id="myInput1" onkeyup="searchEmail()" placeholder="Search for Email.." >
+                    </div>
+                    <br><br><br>
+                    <div>
+                    <label>Full Name</label>
+                        <input type="text" name="fullName" id="fullName" onblur="validateName()">
+                    </div>
+                    <div>
+                        <label>Age</label>
+                        <input type="text" name="age" id="age" onblur="validateAge()">
+                    </div>
+                    <div>
+                        <label>Salary</label>
+                        <input type="text" name="salary" id="salary" onblur="validateSalary()">
+                    </div>
+                    <div>
+                        <label>Email Id</label>
+                        <input type="text" name="email" id="email"  onblur="validateEmail()">
+                    </div>
+                    
+                    <div>
+                        <label>Remarks</label>
+                        <input type="text" name="Remarks" id="Remarks" onblur="validateRemark()">
+                    </div>
+                    
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit" >
+                    </div>
+                </form>
+		</div>
+		<br/><br><br>
+        <h1><center>Employee Details</center></h1>
+	
+		<div class = "employees-table">
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Age</th>
+                            <th>Salary</th>
+                            <th>Email ID</th>
+                            <th>Remarks</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+        
+    <script src="script.js"></script>
+</body>
+</html>
